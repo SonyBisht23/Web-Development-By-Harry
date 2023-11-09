@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      /* .box:first-child {
+        background-color: red;
+      }*/
+      .box::first-line {
+        background-color: yellow;
+      }
+      .box::before {
+        content: "SOFTWARE DEVELOPER";
+        color: RED;
+        font-size: 20px;
+      }
+      .box::after {
+        content: "at Google";
+        color: blue;
+        font-size: 20px;
+      }
+      .box::selection {
+        color: green;
+        background-color: pink;
+      }
+      .box::placeholder {
+        color: rgb(72, 72, 198);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+        non cum impedit quis iste nihil dolorum consectetur, dolor porro
+        architecto consequatur maxime eligendi molestiae quisquam quas sequi
+        numquam enim blanditiis explicabo dicta nam. Consequuntur.
+      </div>
+      <div class="box">I am a box</div>
+      <div class="box">I am a box</div>
+      <input type="text" name="" id="" placeholder="Enter your name" />
+    </div>
+  </body>
+</html>

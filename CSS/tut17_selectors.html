@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /*element selector */
+      div {
+        background-color: pink;
+      }
+
+      /*Class selector*/
+      .red {
+        background-color: red;
+      }
+      /*ID selector*/
+      #green {
+        background-color: green;
+      }
+      /*Child selector:direct child div than p=yes, div, ul,p =no*/
+      div > p {
+        color: blue;
+        background-color: brown;
+      }
+
+      /*Descendent child: div,p se mtlb khi bhi hu div main.*/
+      div p {
+        color: blue;
+        background-color: brown;
+      }
+      /*Universal selector*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /*Pseudo Selectors*/
+      a:visited {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red">I am a div.</div>
+    <div id="green">
+      I am another div
+      <p>I am p inside div</p>
+    </div>
+    <a href="https://www.facebook.com">Go To Facebook</a>
+  </body>
+</html>
